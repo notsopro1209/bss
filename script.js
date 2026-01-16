@@ -1,5 +1,5 @@
 // Configuration
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://bss-alpha.vercel.app//api';
 const REFRESH_INTERVAL = 5000; // 5 seconds
 let autoRefresh = true;
 let updates = [];
@@ -269,3 +269,4 @@ function escapeHtml(text) {
     };
     return text.replace(/[&<>"']/g, m => map[m]);
 }
+
