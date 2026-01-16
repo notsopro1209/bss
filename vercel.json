@@ -12,24 +12,8 @@
     ],
     "routes": [
         {
-            "src": "/api/(.*)",
-            "dest": "api/index.py"
-        },
-        {
-            "src": "/webhook/(.*)",
-            "dest": "api/index.py"
-        },
-        {
             "src": "/(.*)",
-            "dest": "public/$1"
+            "dest": "api/index.py"
         }
-    ],
-    "env": {
-        "DISCORD_TOKEN": "",
-        "MACRO_1": "1461505893794582691",
-        "MACRO_2": "1461517312195559530",
-        "MACRO_3": "1461517322652221555",
-        "WEBSITE_URL": "https://bss-alpha.vercel.app/"
-    }
+    ]
 }
-
