@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/index.py",
+            "use": "@vercel/python"
+        },
+        {
+            "src": "public/**",
+            "use": "@vercel/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "api/index.py"
+        },
+        {
+            "src": "/webhook/(.*)",
+            "dest": "api/index.py"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "public/$1"
+        }
+    ],
+    "env": {
+        "DISCORD_TOKEN": "@discord_token",
+        "MACRO_1": "@macro_1",
+        "MACRO_2": "@macro_2",
+        "MACRO_3": "@macro_3",
+        "WEBSITE_URL": "@website_url"
+    }
+}

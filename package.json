@@ -1,0 +1,25 @@
+{
+    "name": "bss-macro-status",
+    "version": "1.0.0",
+    "description": "Bee Swarm Simulator Macro Status Dashboard - Display webhook updates from your macro in real-time",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node server.js"
+    },
+    "keywords": [
+        "discord",
+        "webhook",
+        "bee-swarm-simulator",
+        "macro",
+        "status"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Swarm Simulator - Macro Status</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>BSS Macro Dashboard</h1>
+                <p class="subtitle">Real-time Macro Status Updates</p>
+            </div>
+            <div class="header-controls">
+                <button id="refreshBtn" class="btn btn-primary">Refresh</button>
+                <button id="clearBtn" class="btn btn-secondary">Clear Updates</button>
+            </div>
+        </header>
+
+        <div class="macro-selector">
+            <label for="macroSelect">Select Macro:</label>
+            <select id="macroSelect">
+                <option value="">Loading macros...</option>
+            </select>
+        </div>
+
+        <div class="status-bar">
+            <div class="status-item">
+                <span class="status-label">Total Updates:</span>
+                <span class="status-value" id="updateCount">0</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Last Update:</span>
+                <span class="status-value" id="lastUpdate">Never</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Auto-Refresh:</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="autoRefresh" checked>
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <main id="updatesContainer" class="updates-grid">
+            <div class="loading-message">
+                <p>Loading macro updates...</p>
+            </div>
+        </main>
+    </div>
+
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
