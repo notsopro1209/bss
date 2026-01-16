@@ -25,10 +25,10 @@
         }
     ],
     "env": {
-        "DISCORD_TOKEN": "@discord_token",
-        "MACRO_1": "@macro_1",
-        "MACRO_2": "@macro_2",
-        "MACRO_3": "@macro_3",
+        "DISCORD_TOKEN": "",
+        "MACRO_1": "1461505893794582691",
+        "MACRO_2": "1461517312195559530",
+        "MACRO_3": "1461517322652221555",
         "WEBSITE_URL": "@website_url"
     }
 }
